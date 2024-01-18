@@ -1,0 +1,42 @@
+<script>
+    const teste = true;
+</script>
+
+<h1>Card</h1>
+<p>Componente card está funcionando</p>
+<img  width="300"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFfkyOD2HOnzeyFTmCUQEz6vntqOy2k6lqbg&usqp=CAU" alt="" srcset="">
+<img width="300" height="168" src="https://www.otempo.com.br/image/contentid/policy:1.3199833:1692722724/Baojun-Yun-Duo-Interior-4-jpg.jpg?f=3x2&w=1224" alt="" srcset="">
+<img width="300" height="168" src="https://carrosde2024.com.br/wp-content/uploads/2023/10/interior.byd_.dolphin.jpg" alt="" srcset="">
+<br>
+
+<ul>
+    <li *ngFor="let i of dolphin"> {{i}}</li>
+    <button (click)="adicionar()">Adicionar</button>
+</ul>
+
+<button>Teste</button>
+
+<div [ngSwitch]="menuType">
+    <div *ngSwitchCase="'user'" >
+        <ul>
+            <li>Editar perfil</li>
+            <li>Escolher cor</li>
+        </ul>
+
+    </div>
+
+    <div *ngSwitchCase="'adm'" >
+        <ul>
+            <li>Aprovar perfil</li>
+            <li>Gerenciar usuários</li>
+        </ul>
+    </div>
+
+    <div *ngSwitchCase="'dev'" >
+        <ul>
+            <li>Cadastrar cor </li>
+            <li>Gerenciar adm</li>
+        </ul>
+    </div>
+
+</div>

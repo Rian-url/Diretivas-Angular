@@ -1,0 +1,9 @@
+<p [ngClass]="estilo">comp-atributos works!</p>
+
+<input type="text" [(ngModel)] = "item">
+<p>NgModel {{item}}</p>
+<button (click)="adicionarLista()">Adicionar</button>
+
+<ul>
+    <li *ngFor="let elemento of lista">{{elemento}}</li>
+</ul>
